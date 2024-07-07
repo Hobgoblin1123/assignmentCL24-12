@@ -1,0 +1,166 @@
+body{
+    position: relative;
+}
+.circle1{
+    width: 50px;
+	height: 50px;
+	border-radius: 50%;
+    background: linear-gradient(to top left,rgb(187, 221, 235),rgb(4, 4, 77));
+    top: 60%;
+    left: 15%;
+    position: absolute;
+    z-index: -50;
+    animation: moving1 15s infinite;
+    box-shadow: 4px 4px  rgb(2, 70, 30) inset;
+}
+
+.circle2{
+    width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: linear-gradient(to bottom right,rgb(241, 241, 177),rgb(143, 143, 243));
+    top: 48%;
+    right: 10%;
+    position: absolute;
+    z-index: -50;
+    animation: moving1 15s infinite;
+    box-shadow: 2px 2px  rgb(21, 44, 31);
+}
+
+.circle3{
+    width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background:linear-gradient(to top right,rgb(245, 112, 112),rgb(85, 107, 6));
+    top: 79%;
+    left: 18%;
+    position: absolute;
+    z-index: -50;
+    animation: moving2 15s infinite;
+    box-shadow: -1px -1px  rgb(16, 102, 52) inset;
+}
+
+.circle4{
+    width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background: linear-gradient(to top left,rgb(248, 248, 248),rgb(73, 72, 72));
+    top: 45%;
+    left: 25%;
+    position: absolute;
+    z-index: -50;
+    animation: moving2 15s infinite;
+    box-shadow: -2px -2px  rgb(18, 18, 19);
+}
+
+.circle5{
+    width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background: linear-gradient(to top left,rgb(69, 209, 127),rgb(126, 217, 230));
+    top: 65%;
+    right: 20%;
+    position: absolute;
+    z-index: -50;
+    animation: moving1 15s infinite;
+    box-shadow: 2px 2px  rgb(130, 130, 240);
+}
+
+.circle6{
+    width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: linear-gradient(to bottom right,rgb(223, 152, 185),rgb(87, 19, 81));
+    top: 35%;
+    right: 10%;
+    position: absolute;
+    z-index: -50;
+    animation: moving1 15s infinite;
+    box-shadow: -2px -2px  rgb(130, 130, 240) inset;
+}
+
+.triangle1{
+    border-bottom: 90px solid #bbb4ba;
+	border-right: 30px solid transparent;
+	border-left: 30px solid transparent;
+    transform: rotate(90deg);
+    z-index: -50;
+    top: 35%;
+    left: 10%;
+    animation: moving3 10s infinite;
+    box-shadow: 10px 10px rgb(109, 50, 89) inset;
+    position: absolute;
+}
+
+.triangle2{
+    border-bottom: 120px solid #5abce9;
+	border-right: 40px solid transparent;
+	border-left: 40px solid transparent;
+    transform: rotate(90deg);
+    z-index: -50;
+    top: 47.5%;
+    right: 29%;
+    animation: moving3 10s infinite;
+    box-shadow: 10px 10px rgb(99, 4, 67) inset;
+    position: absolute;
+}
+
+.triangle3{
+    border-bottom: 90px solid #686467;
+	border-right: 30px solid transparent;
+	border-left: 30px solid transparent;
+    transform: rotate(90deg);
+    z-index: -50;
+    top: 80%;
+    right: 25%;
+    animation: moving3 10s infinite;
+    box-shadow: 10px 10px rgb(71, 2, 48) inset;
+    position: absolute;
+}
+
+@keyframes moving1{
+    25%{
+        transform: translate(30px,-50px);
+    }
+
+    75%{
+        transform: translateX(40px,-60px);
+    }
+
+    100%{
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moving2{
+    25%{
+        transform: translate(-60px,-80px);
+    }
+
+    50%{
+        transform: translateY(40px);
+    }
+
+    77%{
+        transform: translate(40px,50px,0);
+    }
+
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+@keyframes moving3{
+    30%{
+        transform: rotate(100deg);
+    }
+
+    70%{
+        transform: rotate(115deg);
+    }
+
+    100%{
+        transform: rotate(90deg);
+    }
+}
